@@ -23,7 +23,6 @@
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
-	<script type="text/javascript" src="js/tree.js"></script>
 </head>
 
 
@@ -73,6 +72,7 @@
 			                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Projekt <b class="caret"></b></a>
 			                <ul class="dropdown-menu">
                    		 		<li><a href="heartglow.php">Hjärteglöd</a></li>
+                   		 		<li><a href="artBench.php">ArtBench</a></li>
 			                </ul>
 
 			            </li>

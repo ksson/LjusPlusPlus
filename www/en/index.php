@@ -23,15 +23,16 @@
 	<script type="text/javascript" src="../js/jquery.min.js"></script>
 	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="../js/scripts.js"></script>
-	<script type="text/javascript" src="js/tree.js"></script>
-	
+	<!--<script type="text/javascript" src="js/tree.js"></script>
+	-->
 </head>
 
 <div class="twinkling"></div>
 <div class="clouds"></div>
 <div class="stars"></div>
 <div class="siluett"></div>
-<div id="tree"></div>
+<!--<div id="tree"></div>
+-->
 
 
 <body class="bodybg">
@@ -70,6 +71,8 @@
 			                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Project <b class="caret"></b></a>
 			                <ul class="dropdown-menu">
                    		 		<li><a href="heartglow.php">Heartglow</a></li>
+								<li><a href="artBench.php">ArtBench</a></li>
+
 			                </ul>
 
 			            </li>
@@ -97,18 +100,16 @@
 
 			<div class="jumbotron">
 
-				<?php
-					include 'includes/treeAnimation.php';
-				?>
+				
 
 
 
 				<div class="row clearfix">
 				<div class="col-md-12 column">
 
-					<h3>
+					<h2>
 						Heartglow
-					</h3>
+					</h2>
 					
 					<p>
 						During Luleå Autumn festival, on October 30th to November 2nd, the first milestone will be reached in the city park. Ljus++ presents the Heartglow Tree, an interactive light installation that spreads life and warmth through the autumn chill. Check out the website to read more about the installation Heartglow.

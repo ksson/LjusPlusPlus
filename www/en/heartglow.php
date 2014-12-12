@@ -69,6 +69,8 @@
 			                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Project <b class="caret"></b></a>
 			                <ul class="dropdown-menu">
                    		 		<li class="active"><a href="heartglow.php">Heartglow</a></li>
+								<li><a href="artBench.php">ArtBench</a></li>
+
 			                </ul>
 
 			            </li>

@@ -23,28 +23,30 @@
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
-	<!--<script type="text/javascript" src="js/tree.js"></script>
-	-->
+	<script type="text/javascript" src="js/tree.js"></script>
 </head>
-<!--
--->
+
+
+
 
 <div class="twinkling"></div>
 <div class="clouds"></div>
 <div class="stars"></div>
 <div class="siluett"></div>
-<!--<div id="tree"></div>
--->
+<div id="tree"></div>
 
-<body class="bodybg">
+
+<body>
+
+	
 <div class="container">
 	<div class="row clearfix">
 		<div class="col-md-2 column">
 		</div>
 		<div class="col-md-8 column">
 
-
 			<!--  navbar -->
+
 			<nav class="navbar navbar-inverse" role="navigation">
 				<div class='navbar-inner'>
 				<div class="navbar-header">
@@ -71,20 +73,20 @@
 						<li class="dropdown">
 			                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Project <b class="caret"></b></a>
 			                <ul class="dropdown-menu">
-                   		 		<li><a href="heartglow.php">HeartGlow</a></li>
-								<li><a href="artBench.php">ArtBench</a></li>
-
+                   		 		<li><a href="heartglow.php">Heartglow</a></li>
+                   		 		<li class="active"><a href="artBench.php">ArtBench</a></li>
+			                	  
 			                </ul>
 
 			            </li>
-			            <li class="active">
-							<a href="gallery.php">Gallery</a>
+			            <li>
+							<a href="gallery.php">Galleri</a>
 						</li>
 
 					</ul>
 					
 					<form align="right">
-						<p> <a href="../"><img src="images/swedish-flag.jpg" alt="" width="30px" height="" /></a>
+						<p> <a href="/en/"><img src="images/UKFlag.jpg" alt="" width="30px" height="" /></a>
 					</form>
 
 				</div>
@@ -92,86 +94,138 @@
 				</div>
 				
 			</nav>
+
+
 			<!--  /navbar -->
 
-			<!-- Content -->
 
 			<div class="jumbotron">
 
+				<?php
+				include 'includes/treeAnimation.php'
+				?>
 
-				
 
 			<div class="row clearfix">
 				<div class="col-md-12 column">
-
-
-						<style> 
-						.mosaicflow__column { float:left; } 
-						.mosaicflow__item img { display:block; width:100%; height:auto; } 
-						</style>
-
-					<!--
-						<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> 
-					-->
-						<script src="../js/jquery.mosaicflow.min.js"></script>
-
-
 					<h2>
-						Gallery
+						ArtBench på kulturen hus
 					</h2>
 					<p>
-						<?php
-						$dirname = "../gallery/";
-
-						$folders = glob($dirname."*");
-						foreach($folders as $folder){
-							$test = explode(".", $folder);
-							echo '<h3>'.$test[3].'</h3>';
-
-							echo '<div class="clearfix mosaicflow">';
-
-							$images = glob($folder."/*.jpg");
-							foreach($images as $image) {
-								$test1 = explode("/", $image);
-								
-								
-								$src = ''.$test1[0].'/'.$test1[1].'/'.$test1[2].'/thumb/'.$test1[3].'';
-								//echo $src;
-
-								echo '	
-								<div class="mosaicflow__item"> 
-								<a href = "'.$image.'"><img width="500" height="300" src="'.$src.'" alt=""> </a>
-								</div> 
-								';
-							
-							}
-							echo '</div>'; 
-
-						}	
-	
-					//	$images = glob($dirname."*.jpg");
-					//	foreach($images as $image) {
-					//	echo '<img src="'.$image.'" / width = "50%"><br />';
-					//	}
-
-						?>
+						/lipsum
 
 					</p>
 					
+				</div>
+			</div>
+			<div class="row clearfix">
+				<div class="col-md-12 column">
+					<h3>
+						/lipsum
+					</h3>
+					<p>
+					<em>
+						/lipsum
+						<br>
+						<br>
+						/lipsum
+						<br>
+						<br>
+						/lipsum
+					</em>
+
+					</p>
+					<p>
+						
+					</p>
+				</div>
+			</div>
+			<div class="row clearfix">
+				<div class="col-md-12 column">
+					<h2>
+						/lipsum
+					</h2>
+					<p>
+						/lipsum
+
+						<br>
+						<br>
+
+						/lipsum
+
+					</p>
+					<p>
+					</p>
+				</div>
+			</div>
+
+			<div class="row clearfix">
+				<div class="col-md-12 column">
+					<h2>
+						/lipsum
+					</h2>
+					<p>
+						
+
+						Systemet är huvudsakligen uppbyggt med mikrokontrollerkort kallade <a href="https://pinocc.io/">Pinoccio</a> samt adresserbara LED-lister.
+						<br>
+						<br>
+
+						 /lipsum
+						 <br>
+						<br>
+						/lipsum
+						<br>
+						<br>
+						/lipsum
 
 
 
+						<ul class="list-unstyled">
+						  <h4>/lipsum</h4>
+						  
+						    <ul>
+						      /lipsum
 
+						    </ul>
+						  
+						  
+						</ul>
+
+
+					</p>
+					<p>
+					</p>
+				</div>
+			</div>
+
+			<div class="row clearfix">
+				<div class="col-md-12 column">
+					<h2>
+						/lipsum
+					</h2>
+					<p>
+
+						/lipsum
+						<br>
+						<br>
+						/lipsum
+						<br>
+						<br>
+						/lipsum
+						<br>
+						<br>
+						/lipsum
+
+					</p>
+					<p>
+					</p>
 				</div>
 			</div>
 
 
-			
+
 			</div>
-
-			<!-- \Content -->
-
-			<!-- Advetisment -->
 
 
 			<div class="row clearfix">
@@ -181,47 +235,29 @@
 					
 					<div class='bottom-bar' align = "center">
 
-				          <div id="bottom_container" >
+				          <div id="bottom_container">
 
-				        <p>
+					        <p>
 
-				          <a href="http://www.artplusdata.se/"><img class="alignleft size-full wp-image-11707" title="Art plus Data" src="images/artplusdata.png" alt="" width="25%" height="" /></a></p>
-				          
-				         <p> <a href="http://www.ltu.se"><img class="alignleft size-full wp-image-11707" title="Lulea tekniska universitet" src="images/ltu.png" alt="" width="25%" height="" /></a>
+					          <a href="http://www.artplusdata.se/"><img class="alignleft size-full wp-image-11707" title="Art plus Data" src="images/artplusdata.png" alt="" width="25%" height="" /></a></p>
+					          
+					         <p> <a href="http://www.ltu.se"><img class="alignleft size-full wp-image-11707" title="Lulea tekniska universitet" src="images/ltu.png" alt="" width="25%" height="" /></a>
 
 
-				          
-				          </p>
+					          <a href="http://www.lulea.se/uppleva--gora/arrangemang/lulea-hostfestival/program.html"><img class="alignleft size-full wp-image-11707" title="Lulea höstfestival" src="images/Symbolbild-Lulea-hostfestival.jpg" alt="" width="25%" height="" /></a>
+					          
+					          </p>
 
-				        </div>
+        				</div>
 
 				      </div>
 					
 				</div>
 			</div>
-
-
-			<!-- Advetisment -->
-
-			
 		</div>
 		<div class="col-md-2 column">
 		</div>
 	</div>
-
 </div>
-
-
-
-
-
-
-
-
-
 </body>
-
-
 </html>
-
-

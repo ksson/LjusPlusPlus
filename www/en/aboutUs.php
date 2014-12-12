@@ -23,15 +23,16 @@
 	<script type="text/javascript" src="../js/jquery.min.js"></script>
 	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="../js/scripts.js"></script>
-	<script type="text/javascript" src="js/tree.js"></script>
-	
+	<!--<script type="text/javascript" src="js/tree.js"></script>
+	-->
 </head>
 
 <div class="twinkling"></div>
 <div class="clouds"></div>
 <div class="stars"></div>
 <div class="siluett"></div>
-<div id="tree"></div>
+<!--<div id="tree"></div>
+-->
 
 
 <body>
@@ -70,6 +71,8 @@
 			                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Project <b class="caret"></b></a>
 			                <ul class="dropdown-menu">
                    		 		<li><a href="heartglow.php">Heartglow</a></li>
+								<li><a href="artBench.php">ArtBench</a></li>
+
 			                </ul>
 
 			            </li>
@@ -94,10 +97,7 @@
 
 			<div class = "jumbotron" >
 
-				<?php
-					include 'includes/treeAnimation.php';
-				?>
-
+				
 			<div class="row clearfix">
 				<div class="col-md-12 column">
 					<h2>
