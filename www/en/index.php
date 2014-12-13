@@ -100,8 +100,29 @@
 
 			<div class="jumbotron">
 
-				
+				<div class="row clearfix">
+				<div class="col-md-12 column">
 
+					<h2>
+						Artbench at kulturens hus
+					</h2>
+					
+					<p>
+						Now that heart glow is completed and the project begins to pull an end, it's time to present our latest work ArtBench.
+					</p>	
+					<p>
+						ArtBench is an interactive art project where two benches are connected to each other and illuminates the respective seat 
+					</p>
+					<p>
+						<a class="btn" href="artBench.php">Projektet ArtBench »</a>
+					</p>
+
+					<P>
+						Ps.<br>
+						The benches on the site shows how the benches are used right now.
+					</P>
+				</div>
+				</div>
 
 
 				<div class="row clearfix">

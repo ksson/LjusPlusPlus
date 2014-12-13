@@ -102,130 +102,60 @@
 
 			<div class="jumbotron">
 
-				<?php
-				include 'includes/treeAnimation.php'
-				?>
+				
 
 
 			<div class="row clearfix">
 				<div class="col-md-12 column">
 					<h2>
-						ArtBench på kulturen hus
+						Provsitt ArtBench på Kulturens Hus!
 					</h2>
 					<p>
-						/lipsum
+						
+
+						Under vecka 50 kommer Ljus++ ställa ut två exemplar av ljusinstallationen ArtBench
+						i Kulturens Hus. Konstverket är en del i ett samarbete med projektet Art+Data,
+						i vilket totalt fyra interaktiva bänkar skapats.
+						</p>
+						<p>
+						Provsitt ArtBench innanför Kulturens Hus entré och upplev hur en aura av ljus
+						omger din plats. Om resten av bänken plötsligt börjar lysa i en annan färg har
+						du fått osynligt sällskap. Iallafall osynligt från din plats. Då har några valt
+						att sätta sig på den andra bänken som befinner sig ett par våningar upp.
+
+					<p>
+						<a class="btn" href="http://www.kulturenshus.com/">Kulturens hus »</a>
+					</p>
+
+
+					</p>
+					<p>
 
 					</p>
 					
+					
 				</div>
 			</div>
+			
 			<div class="row clearfix">
 				<div class="col-md-12 column">
-					<h3>
-						/lipsum
-					</h3>
-					<p>
-					<em>
-						/lipsum
-						<br>
-						<br>
-						/lipsum
-						<br>
-						<br>
-						/lipsum
-					</em>
-
-					</p>
-					<p>
+					<h2>
+						Hur funkar det?
 						
-					</p>
-				</div>
-			</div>
-			<div class="row clearfix">
-				<div class="col-md-12 column">
-					<h2>
-						/lipsum
 					</h2>
 					<p>
-						/lipsum
-
-						<br>
-						<br>
-
-						/lipsum
-
-					</p>
-					<p>
-					</p>
-				</div>
-			</div>
-
-			<div class="row clearfix">
-				<div class="col-md-12 column">
-					<h2>
-						/lipsum
-					</h2>
-					<p>
-						
-
-						Systemet är huvudsakligen uppbyggt med mikrokontrollerkort kallade <a href="https://pinocc.io/">Pinoccio</a> samt adresserbara LED-lister.
-						<br>
-						<br>
-
-						 /lipsum
-						 <br>
-						<br>
-						/lipsum
-						<br>
-						<br>
-						/lipsum
-
-
-
-						<ul class="list-unstyled">
-						  <h4>/lipsum</h4>
-						  
-						    <ul>
-						      /lipsum
-
-						    </ul>
-						  
-						  
-						</ul>
-
+						De två bänkarna i Kulturens Hus är utrustade med trycksensorer och ljusslingor
+						som lyser upp då någon sitter på sensorerna. Sittytan är uppdelad i tre zoner 
+						som var och en börjar lysa då de används. Varje bänk är lyser upp i en viss färg. 
+						Den ena bänken registrerar även om den andra bänken används, då de är sammanlänkade över nätet.
+						Om någon sitter på bänk 1 lyser motsvarande plats upp på bänk 2 i  den färg som associeras
+						med bänk 1.
 
 					</p>
 					<p>
 					</p>
 				</div>
 			</div>
-
-			<div class="row clearfix">
-				<div class="col-md-12 column">
-					<h2>
-						/lipsum
-					</h2>
-					<p>
-
-						/lipsum
-						<br>
-						<br>
-						/lipsum
-						<br>
-						<br>
-						/lipsum
-						<br>
-						<br>
-						/lipsum
-
-					</p>
-					<p>
-					</p>
-				</div>
-			</div>
-
-
-
 			</div>
 
 

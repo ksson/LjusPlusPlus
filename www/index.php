@@ -100,7 +100,7 @@
 				<div class="col-md-12 column">
 
 					<h2>
-						Trädet Hjärteglöd på Luleå Höstfestival
+						ArtBench på kulturens hus.
 					</h2>
 					
 					<p>
