@@ -103,15 +103,14 @@ include 'bench/bench.php'
 				<div class="col-md-12 column">
 
 					<h2>
-						ArtBench på kulturens hus.
+						Provsitt ArtBench på Kulturens Hus!
 					</h2>
 					
 					<p>
-						Nu när hjärteglöd är avslutat och projektet börjar dra sig mitt ett slut, är det tid att presentera vårat senaste arbete ArtBench.
-					</p>	
-					<p>
-						ArtBench är ett interaktivt konst projekt där två bänkar är anslutna emot varandra och lyser upp respektive bänk					</p>
-					<p>
+						Under vecka 50 kommer Ljus++ ställa ut två exemplar av ljusinstallationen ArtBench
+						i Kulturens Hus. Konstverket är en del i ett samarbete med projektet Art+Data,
+						i vilket totalt fyra interaktiva bänkar skapats.					</p>	
+					
 						<a class="btn" href="artBench.php">Projektet ArtBench »</a>
 					</p>
 
@@ -123,28 +122,7 @@ include 'bench/bench.php'
 			</div>
 
 
-				<div class="row clearfix">
-				<div class="col-md-12 column">
-
-					<h2>
-						Hjärteglöd
-					</h2>
-					
-					<p>
-						Vi vill tacka alla som tog det tid och gick ner till staden och
-						tittade på vårt projekt, projektet gick mer eller mindre perfekt
-						med undantag för några mindre problem. Men tack att du tog dig ner
-						och gjorde staden mer livfyld					
-					</p>
-					<p>
-						Vi vill också ge ett extra tack till alla barn som gjorde att vårat arbete kom tll användning samt spride glädje till alla runt om kring.
-					</p>
-
-					<P>
-						<a class="btn" href="http://www.ltu.se/ltu/media/news/Barnen-vacker-liv-i-traden-med-tekniken-1.122925">Artikel ifrån LTU »</a>
-					</P>
-				</div>
-			</div>
+				
 
 				<div class="row clearfix">
 				<div class="col-md-12 column">

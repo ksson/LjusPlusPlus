@@ -24,7 +24,6 @@
 
 .siluett{
 			z-index:4;
-			background-image: url('../images/bench/siluett.gif');
 		    background-repeat: repeat-x;
 		    background-attachment: fixed;
 		    background-position: bottom right; 
