@@ -23,17 +23,16 @@
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
-	<script type="text/javascript" src="js/tree.js"></script>
 </head>
-
-
 
 
 <div class="twinkling"></div>
 <div class="clouds"></div>
 <div class="stars"></div>
 <div class="siluett"></div>
-<div id="tree"></div>
+<?php
+include 'bench/bench.php'
+?>
 
 
 <body>

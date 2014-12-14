@@ -5,7 +5,7 @@ function rgb(r, g, b) {
 var speedMax = 30
 
 var freq = 0.25; // 0.25 - 2
-var updateIntervalMs = 250; // ms
+var updateIntervalMs = 500; // ms
 var range = [150, 255];
 var baseColor = [0, 0, 0];
 var colorMult = [1, 0, 0.8];
@@ -25,7 +25,7 @@ function getStatus() {
 
     
 
-    var Url = "http://ljusplusplus.se:8080/status";
+    var Url = "http://trollegeuna.se:8888/status";
     xmlHttp = new XMLHttpRequest();
     xmlHttp.open("GET", Url, true);
     xmlHttp.send(null);
@@ -51,7 +51,7 @@ function getStatus_post(status, seat, id) {
     data.status = status;
     data.bench_id = id;
     data.seat = seat; 
-    var Url = "http://ljusplusplus.se:8080/status";
+    var Url = "http://trollegeuna.se:8888/status";
     xmlHttp = new XMLHttpRequest();
     xmlHttp.open("POST", Url, true);
     xmlHttp.send(JSON.stringify(data));

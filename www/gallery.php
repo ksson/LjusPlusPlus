@@ -32,7 +32,10 @@
 <div class="clouds"></div>
 <div class="stars"></div>
 <div class="siluett"></div>
-<div id="tree"></div>
+<?php
+include 'bench/bench.php'
+
+?>
 
 
 <body class="bodybg">

@@ -33,8 +33,12 @@
 <div class="stars"></div>
 <div class="siluett"></div>
 
+<?php
+include 'bench.php'
 
-<body class="bodybg">
+?>
+
+<body>
 
 	
 <div class="container">
