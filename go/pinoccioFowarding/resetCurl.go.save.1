@@ -1,0 +1,41 @@
+package main
+
+import(
+	"time"
+	"fmt"
+)
+
+
+func main(){
+	curl := make(chan int)
+	quit := make(chan int)
+	go func() {
+		select {
+		case <- curl:
+			fmt.Println("Go Listening..")
+			startListen()
+			fmt.Println("ello")
+		case <- quit:
+			fmt.Println("Quittng..")
+		}
+
+	}()
+	curl <- 1
+	ticker := time.NewTicker(time.Second * 7)
+
+	go func () {
+        	for t := range ticker.C {
+			resetCurl(t)
+			
+        	}
+    	}()
+
+    	time.Sleep(time.Second * 150)
+    	ticker.Stop()
+    	fmt.Println("Ticker stopped")
+}
+
+
+func resetCurl(t time.Time){
+	fmt.Println("\", t)
+}

@@ -1,0 +1,31 @@
+package main
+
+import(
+	"time"
+	"fmt"
+)
+
+
+func main(){
+	curl := make(chan int)
+	quit := make(chan int)
+	go func() {
+		select {
+		case <- curl:
+			for {
+				fmt.Println("Go Listening..")
+				restartListen()
+			}
+			case <- quit:
+			fmt.Println("Quittng..")
+		}
+
+	}()
+	curl <- 1
+}
+
+
+func restartListen(){
+	fmt.Println("Restarting curlListener..")
+	startListen()
+}

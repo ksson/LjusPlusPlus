@@ -1,0 +1,144 @@
+package main
+
+import(
+	"fmt"
+	"os/exec"
+	"encoding/json"
+	"time"
+)
+
+type AVG_AQ struct {
+	Id uint64 `json:"id"`
+	NO2 float64 `json:"no2"`
+	Time time.Time  `json:"time"`
+
+}
+
+
+//curl -sb -H "Accept: application/json" "http://ljusplusplus.se:8080/aq"
+var green, yellow float64
+writeToken := "6c5da8cf710ba4d745b8b00b523a9f6a"
+var greenTroop, redTroop string
+func main(){
+	green = 4
+	yellow = 2
+//	Check if 2 script had 2 arguemnts
+	if(len(os.Args) > 3){
+		fmt.Println("Too many arguements, only 2 required")
+		return
+	}else{
+		fmt.Println("Too few arguements, 2 required")
+	}
+	redTroop = os.Args[1]
+	greenTroop = os.Args[2]
+
+	cmd := exec.Command("curl","-sb","-H","Accept: application/json", "http://ljusplusplus.se:8080/aq")
+  	out, err := cmd.Output()
+  	if err != nil {
+  		fmt.Println(err.Error())
+  		return
+  	}
+
+	fmt.Println(out)
+	var res []AVG_AQ
+	err = json.Unmarshal([]byte(out), &res)
+	if(err != nil) {
+	  fmt.Println(err.Error())
+	  return
+	}
+//	fmt.Println(res)
+	for i := 0; i < len(res); i++ {
+		setColors(i, res[i].NO2)
+	} 
+}
+
+func setColors(order int,input float64){
+	/**
+	b1 = red bench and b2 = green bench
+	**/
+	
+	var b1, b2 [2]string
+	if(input < yellow){
+	  switch(order){
+		case 0:
+			b1[0] = "s(3)"
+			b2[0] = "sit(3,0)"
+			break;
+		case 1:
+			b1[0] = "s(2)"
+			b2[0] = "sit(2,0)"
+			break;
+		case 2: 
+			b1[0] = "s(1)"
+			b2[0] = "sit(1, 0)"
+			break;
+		default:
+			fmt.Println("Something went wrong..")
+			break;
+	   }
+	}
+	  str := "s"
+	}else if(input < green){
+	  switch(order){
+		case 0:
+			b1[0] = ""https://api.pinocc.io/v1/" + troop + "/1/command/s(3)"
+			b1[1] = "sit(3,1)"
+			b2[0] = "s(3)"
+			b2[1] = "sit(3,0)"
+			break;
+		case 1:
+			b1[0] = "s(2)"
+			b1[1] = "sit(2,1)"
+			b2[0] = "s(2)"
+			b2[1] = "sit(2,0)"
+			break;
+		case 2: 
+			b1[0] = "s(1)"
+			b1[1] = "sit(1,1)"
+			b2[0] = "s(1)"
+			b2[1] = "sit(1,0)"
+			break;
+		default:
+			fmt.Println("Something went wrong..")
+			break;
+	   }
+
+	}else{
+	  switch(order){
+		case 0:
+			b1[0] = "sit(3,1)"
+			b2[0] = "s(3)"
+			break;
+		case 1:
+			b1[0] = "sit(2,1)"
+			b2[0] = "s(2)"
+			break;
+		case 2: 
+			b1 = "sit(1,1)"
+			b2 = "s(1)"
+			break;
+		default:
+			fmt.Println("Something went wrong..")
+			break;
+	   }
+
+	}
+
+
+}
+
+
+
+        c := "https://api.pinocc.io/v1/" + troop + "/1/command/" + forwardCmd + "?token=" + writeToken
+	fmt.Println(c)
+        runCmd(c)
+
+func runCmd(cmd string){
+        out, err := exec.Command("curl",cmd ).Output()
+        if err != nil {
+                fmt.Println("error occured")
+                fmt.Printf("%s", err)
+        }
+        fmt.Println(string(out))
+}
+
