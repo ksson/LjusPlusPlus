@@ -30,16 +30,16 @@ type jValue struct {
 }
 
 type Configuration struct {
-	Troops   []string
-	Troop_Id []string
-	Tokens   []string
+	Troops   []string `json:"Troops"` 
+	Troop_Id []string `json:"Troop_Id"`
+	Tokens   []string `json:"Tokens"`
 }
 
 var redTroop, redId, greenTroop, greenId, readToken, writeToken string
 
 func startListen() {
 
-	file, _ := os.Open("config.json")
+	file, _ := os.Open("../config.json")
 	decoder := json.NewDecoder(file)
 	config := Configuration{}
 	err := decoder.Decode(&config)

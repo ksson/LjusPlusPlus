@@ -10,7 +10,7 @@ import (
 )
 
 type DB_config struct {
-	DB_init []string
+	DB_init []string 
 }
 
 var adress, db_user, db_pwd, db_name string
